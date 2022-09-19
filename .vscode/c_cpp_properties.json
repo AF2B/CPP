@@ -3,7 +3,8 @@
         {
             "name": "Linux",
             "includePath": [
-                "${workspaceFolder}/**"
+                "${workspaceFolder}/**",
+                "/opt/vcpkg/installed/x64-linux/include"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
