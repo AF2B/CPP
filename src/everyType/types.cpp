@@ -1,5 +1,3 @@
-// Put here every type and one example of each type in C++.
-
 #include <iostream>;
 #include <string>;
 #include <vector>;
