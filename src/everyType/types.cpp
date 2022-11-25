@@ -19,6 +19,30 @@ int main()
     int a = 1;
     std::cout << "Integer: " << a << std::endl;
 
+    // 1.1 Unsigned Integer
+    unsigned int b = 1;
+    std::cout << "Unsigned Integer: " << b << std::endl;
+
+    // 1.2 Long Integer
+    long int c = 1;
+    std::cout << "Long Integer: " << c << std::endl;
+
+    // 1.3 Unsigned Long Integer
+    unsigned long int d = 1;
+    std::cout << "Unsigned Long Integer: " << d << std::endl;
+
+    // 1.4 Short Integer
+    short int e = 1;
+    std::cout << "Short Integer: " << e << std::endl;
+
+    // 1.5 Unsigned Short Integer
+    unsigned short int f = 1;
+    std::cout << "Unsigned Short Integer: " << f << std::endl;
+
+    // 1.6 Long Long Integer
+    long long int z = 1;
+    std::cout << "Long Long Integer: " << z << std::endl;
+
     // 2. Float
     float b = 1.1;
     std::cout << "Float: " << b << std::endl;
@@ -105,3 +129,37 @@ int main()
         m.pop();
     } 
     std::cout << std::endl;
+
+    // 14. Queue
+    std::queue<int> n;
+    n.push(1);
+    n.push(2);
+    n.push(3);
+    std::cout << "Queue: ";
+    while (!n.empty())
+    {
+        std::cout << n.front() << " ";
+        n.pop();
+    }
+    std::cout << std::endl;
+
+    // 15. Deque
+    std::deque<int> o = {1, 2, 3};
+    std::cout << "Deque: ";
+    for (int i = 0; i < o.size(); i++)
+    {
+        std::cout << o[i] << " ";
+    }
+    std::cout << std::endl;
+
+    // 16. List
+    std::list<int> p = {1, 2, 3};
+    std::cout << "List: ";
+    for (auto it = p.begin(); it != p.end(); it++)
+    {
+        std::cout << *it << " ";
+    }
+    std::cout << std::endl;
+
+    return 0;
+}
