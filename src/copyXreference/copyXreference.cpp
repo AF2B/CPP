@@ -22,5 +22,9 @@ int main()
   c = 30;
   std::cout << "a = " << a << " b = " << b << " c = " << c << std::endl;
 
+  // dereference
+  int *d = &a;
+  std::cout << "a = " << a << " d = " << *d << std::endl;
+
   return 0;
 }
